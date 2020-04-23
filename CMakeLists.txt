@@ -1,3 +1,12 @@
+set (Boost_USE_STATIC_LIBS ON)
+set (Boost_USE_MULTITHREADED ON)
+
+set (BOOST_COMPONENTS system 
+                      filesystem
+                      program_options)
+
+FIND_PACKAGE(Boost COMPONENTS ${BOOST_COMPONENTS} REQUIRED)
+
 set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/zlib")
 set(ZLIB_LIBRARY "${CMAKE_CURRENT_SOURCE_DIR}/zlib/build/Debug/zlibstaticd.lib")
 set(LIBTOMCRYPT_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/libtomcrypt/build/include")

@@ -1,0 +1,15 @@
+[submodule "psvpfsparser"]
+	path = psvpfsparser
+	url = https://github.com/KorewaWatchful/psvpfsparser.git
+[submodule "libzrif"]
+	path = libzrif
+	url = https://github.com/KorewaWatchful/libzrif.git
+[submodule "libb64"]
+	path = libb64
+	url = https://github.com/korewawatchful/libb64.git
+[submodule "zlib"]
+	path = zlib
+	url = https://github.com/korewawatchful/zlib.git
+[submodule "libtomcrypt"]
+	path = libtomcrypt
+	url = https://github.com/korewawatchful/libtomcrypt.git
