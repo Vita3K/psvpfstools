@@ -1,10 +1,8 @@
-if(CMAKE_VERSION VERSION_GREATER_EQUAL 3.11) # For IMPORTED_GLOBAL
-    find_package(ZLIB 1.2.11)
-    if(ZLIB_FOUND)
-        # To make an alias for an imported library, this needs to be set on.
-        set_target_properties(ZLIB::ZLIB PROPERTIES IMPORTED_GLOBAL ON)
-        add_library(zlib ALIAS ZLIB::ZLIB)
-    endif()
+cmake_minimum_required(VERSION 3.18)
+
+find_package(ZLIB 1.2.11)
+if(ZLIB_FOUND)
+    add_library(zlib ALIAS ZLIB::ZLIB)
 endif()
 
 if(NOT ZLIB_FOUND)
