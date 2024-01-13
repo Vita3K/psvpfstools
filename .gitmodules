@@ -10,6 +10,3 @@
 [submodule "zlib"]
 	path = zlib
 	url = https://github.com/korewawatchful/zlib.git
-[submodule "libtomcrypt"]
-	path = libtomcrypt
-	url = https://github.com/korewawatchful/libtomcrypt.git
